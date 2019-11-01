@@ -1,0 +1,55 @@
+/*font-family: 'Great Vibes', cursive;
+font-family: 'Lato', sans-serif;*/
+body {
+    background-image: url(toDo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    background-color: #d5fefd;
+    background-image: linear-gradient(315deg, #d5fefd 0%, #fffcff 74%);
+    height: 500px;
+    width: auto;
+    margin: 50px 20%;
+    border-radius: 10px;
+    padding:50px;
+}
+
+h1 {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 800;
+   font-family: 'Great Vibes', cursive;
+}
+ul {
+    margin-top:5px;
+}
+ul > li{
+    padding:0;
+    list-style-type: none;
+    font-size: 1em;
+    font-family: 'Lato', sans-serif;
+    margin-top:5px;
+    width:600px;
+    border-bottom: 1px solid black;
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        margin: 60px auto;
+          padding:25px;
+    }
+    
+    ul>li {
+         width:200px;
+    }
+    
+    h1{
+        padding:1px;
+    }
+}
