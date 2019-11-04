@@ -25,8 +25,8 @@ $(document).ready(function () {
       return this.firstChild.checked;
     }).remove();
   });
-  // La till en randomiser för bakgrundsfärgen med en knapp. Fick deaktivera css för image gradient då den lägger sig över backgroundsfärgen.
-  $("#randomColor").click(function () {
+  // Gjorde containern klickbar istället för random bakgrundsfärg. Fick deaktivera css för image gradient då den lägger sig över backgroundsfärgen.
+  $(".container").click(function () {
     $(".container").each(function () {
       let colorRed = Math.floor((Math.random() * 256));
       let colorGreen = Math.floor((Math.random() * 256));
