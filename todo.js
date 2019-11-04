@@ -25,7 +25,7 @@ $(document).ready(function () {
       return this.firstChild.checked;
     }).remove();
   });
-  // Added a background color randomizer, but had to remove css image gradient. Any image overrides function (runs in the background)
+  // La till en randomiser för bakgrundsfärgen med en knapp. Fick deaktivera css för image gradient då den lägger sig över backgroundsfärgen.
   $("#randomColor").click(function () {
     $(".container").each(function () {
       let colorRed = Math.floor((Math.random() * 256));
