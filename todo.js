@@ -7,7 +7,7 @@ var date = new Date(); // vad är poängen med den här raden? det står ingen d
 
 
 $(document).ready(function () {
-  
+
   $("#addBtn").click(function () {
     var newItem = $('#inputUser').val();
     myTaskArray.push(newItem);
@@ -24,6 +24,15 @@ $(document).ready(function () {
     $('#list').children().filter(function () {
       return this.firstChild.checked;
     }).remove();
+  });
+  // Added a background color randomizer, but had to remove css image gradient. Any image overrides function (runs in the background)
+  $("#randomColor").click(function () {
+    $(".container").each(function () {
+      let colorRed = Math.floor((Math.random() * 256));
+      let colorGreen = Math.floor((Math.random() * 256));
+      let colorBlue = Math.floor((Math.random() * 256));
+      $(this).css("background-color", "rgba(" + colorRed + "," + colorGreen + "," + colorBlue + ")");
+    });
   });
 
 });
