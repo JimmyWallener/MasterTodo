@@ -16,7 +16,8 @@ $(document).ready(function () {
     } else {
       $("#list").append("<li><input type = 'checkbox' id = 'removeTask'>" + "  " + newItem + "</li>");
     }
-    $('#inputUser').val('');
+    // Denna gör ingenting, ta bort?
+    //$('#inputUser').val('');
   });
 
 
