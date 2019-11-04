@@ -1,7 +1,7 @@
 
 var myTaskArray = []
 
-var date = new Date();
+var date = new Date(); // vad är poängen med den här raden? det står ingen datum någonstans på sidan! 
   $(document).ready(function () {
     $("#addBtn").click(function () {
         var newItem = $('#inputUser').val();
