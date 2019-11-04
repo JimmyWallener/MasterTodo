@@ -3,6 +3,7 @@ var myTaskArray = []
 
 var date = new Date(); // vad är poängen med den här raden? det står ingen datum någonstans på sidan!
 // Syftet är nog att sätta datummärkning på todo, dock behöver den formateras till YY/MM/DD men visar YYYY/MM/DD/TZ
+// ok jag förstår!
 $(document).ready(function () {
   $("#addBtn").click(function () {
     var newItem = $('#inputUser').val();
