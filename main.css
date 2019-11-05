@@ -43,7 +43,8 @@ ul > li{
 
 /*har addat css style*/
 .completed {
-    text-decoration: line-through;   
+    text-decoration: line-through;  
+    color:#000;
 }
 
 
