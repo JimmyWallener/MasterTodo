@@ -14,7 +14,8 @@ $(function() {
       return;
     } else {
       $("#list").append("<li><input type = 'checkbox' id = 'removeTask'>" + "  " + newItem + "</li>");
-       //när man klickar på checkbox i listan ska det alternativet strykas över. 
+       //när man klickar på checkbox i listan ska det alternativet strykas över. Jag har addat här också :) 
+       //jag testar gitbash here och det funkar.. hehehe im so happy -- Älskar det 
       $("input:checkbox").click(function () {  
            var $this = $(this);
               if (this.checked) {
@@ -24,7 +25,7 @@ $(function() {
              }
           });
       }                      
-    // Denna gör ingenting, ta bort? ->Hej, det gör något- Det gör textarean töm efter du klickar på AddTask button..  
+// Denna gör ingenting, ta bort? ->Hej, det gör något- Det gör textarean töm efter du klickar på AddTask button..  
     $('#inputUser').val('');
   });
 
