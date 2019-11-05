@@ -7,6 +7,8 @@ body {
     background-repeat: no-repeat;
     height: 100vh;
     overflow: hidden;
+   /******Change the font color to white ********/
+    color:#ffff;
 }
 
 .container {
@@ -36,10 +38,10 @@ ul > li{
     font-family: 'Lato', sans-serif;
     margin-top:5px;
     width:600px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #797676;
 }
 
-//har addat css style 
+/*har addat css style*/
 .completed {
     text-decoration: line-through;   
 }
