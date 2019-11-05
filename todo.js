@@ -3,7 +3,7 @@ var myTaskArray = []
 
 var date = new Date();
 
-$(document).ready(function () {
+$(function() {
 
   $("#addBtn").click(function () {
     var newItem = $('#inputUser').val();
@@ -14,8 +14,16 @@ $(document).ready(function () {
       return;
     } else {
       $("#list").append("<li><input type = 'checkbox' id = 'removeTask'>" + "  " + newItem + "</li>");
+       //klicka på checkbox i listan ska det alternativet strykas över. 
+      $("input:checkbox").click(function () {  
+           var $this = $(this);
+              if (this.checked) {
+                 $this.parent().addClass('completed');
+             } else {
+                 $this.parent().removeClass('completed');
+             }
     }
-    // Denna gör ingenting, ta bort?
+    // Denna gör ingenting, ta bort? ->Ja om det inte gör något heheheh.. 
     //$('#inputUser').val('');
   });
 
@@ -26,6 +34,7 @@ $(document).ready(function () {
     }).remove();
   });
   // Gjorde containern klickbar istället för random bakgrundsfärg. Fick deaktivera css för image gradient då den lägger sig över backgroundsfärgen.
+  //ohhh nice :)
   $(".container").click(function () {
     $(".container").each(function () {
       let colorRed = Math.floor((Math.random() * 256));
