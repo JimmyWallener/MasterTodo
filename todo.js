@@ -36,7 +36,7 @@ $(function() {
     }).remove();
   });
   // Gjorde containern klickbar istället för random bakgrundsfärg. Fick deaktivera css för image gradient då den lägger sig över backgroundsfärgen.
-  //ohhh nice :)
+  //ohhh nice :) Disco Bakgrund 
   $(".container").click(function () {
     $(".container").each(function () {
       let colorRed = Math.floor((Math.random() * 256));
