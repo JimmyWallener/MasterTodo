@@ -39,6 +39,12 @@ ul > li{
     border-bottom: 1px solid black;
 }
 
+//har addat css style 
+.completed {
+    text-decoration: line-through;   
+}
+
+
 @media screen and (max-width:600px) {
     .container {
         margin: 60px auto;
