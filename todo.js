@@ -14,7 +14,7 @@ $(function() {
       return;
     } else {
       $("#list").append("<li><input type = 'checkbox' id = 'removeTask'>" + "  " + newItem + "</li>");
-       //när man klicka på checkbox i listan ska det alternativet strykas över. 
+       //när man klickar på checkbox i listan ska det alternativet strykas över. 
       $("input:checkbox").click(function () {  
            var $this = $(this);
               if (this.checked) {
@@ -22,7 +22,8 @@ $(function() {
              } else {
                  $this.parent().removeClass('completed');
              }
-    }
+          });
+      }                      
     // Denna gör ingenting, ta bort? ->Hej, det gör något- Det gör textarean töm efter du klickar på AddTask button..  
     $('#inputUser').val('');
   });
