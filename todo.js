@@ -10,10 +10,13 @@ $(function () {
     myTaskArray.push(newItem);
     if (myTaskArray.length > 10) {
       alert("Your Schedule for today is now full!");
+      //Lade in ett stopp här då trots att man säger att maxlängd är uppnådd, så fortsatte koden posta efter man trycker ok. return; stoppar det.
+      return;
     } if (newItem == '' || newItem.length < 4) {
       return;
     } else {
-      $("#list").append("<li><input type = 'checkbox' id = 'removeTask'>" + "  " + newItem + "</li>");
+      $("#list").append("<li>" + "[" + myTaskArray.length + "]" + "<input type = 'checkbox' id = 'removeTask'>" + "  " + newItem + "</li>");
+      // lade till nummer framför texten.
       //när man klickar på checkbox i listan ska det alternativet strykas över. Jag har addat här också :) 
       //jag testar gitbash here och det funkar.. hehehe im so happy -- Älskar det 
       $("input:checkbox").click(function () {
