@@ -33,7 +33,17 @@ $(function () {
 
 
   // Här behöver vi lägga in draggable mot div som mall. Det skall inte gå att dra och släppa utanför divtaggen.
-
+      
+      /*
+      $(".sortList").sortable({
+        appendTo: document.body
+      })
+      
+      // Getter
+      var appendTo = $( ".sortList" ).sortable( "option", "appendTo" );
+       // Setter
+      $( ".sortList" ).sortable( "option", "appendTo", document.body );
+      */    
 
 
 
