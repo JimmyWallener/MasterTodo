@@ -27,6 +27,8 @@ $(function () {
     }
     $('#inputUser').val('');
   });
+
+
   // Här behöver vi lägga in draggable mot div som mall. Det skall inte gå att dra och släppa utanför divtaggen.
 
 
@@ -42,6 +44,10 @@ $(function () {
   // Gjorde containern klickbar istället för random bakgrundsfärg. Fick deaktivera css för image gradient då den lägger sig över backgroundsfärgen.
   // Ändrade igen, då färgen ändrades när man använder textfältet. Nu är det h1 texten som är klickbar, dock är klickable area stort nog.
   //ohhh nice :)
+  (function () {
+    (".hoverText[title]").tooltip();
+  });
+  // Lade till en tooltip för att uppmärksamma besökaren om att klicka för att byta färg.
   $("h1").click(function () {
     $(".container").each(function () {
       let colorRed = Math.floor((Math.random() * 256));
