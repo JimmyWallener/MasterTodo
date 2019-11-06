@@ -33,24 +33,23 @@ $(function () {
 
 
   // Här behöver vi lägga in draggable mot div som mall. Det skall inte gå att dra och släppa utanför divtaggen.
-      
-      /*
-      $(".sortList").sortable({
-        appendTo: document.body
-      })
-      
-      // Getter
-      var appendTo = $( ".sortList" ).sortable( "option", "appendTo" );
-       // Setter
-      $( ".sortList" ).sortable( "option", "appendTo", document.body );
-      */    
+
+  /*
+  $(".sortList").sortable({
+    appendTo: document.body
+  })
+  
+  // Getter
+  var appendTo = $( ".sortList" ).sortable( "option", "appendTo" );
+   // Setter
+  $( ".sortList" ).sortable( "option", "appendTo", document.body );
+  */
 
 
 
   //
   $(function () {
-    $(".hoverText:[data-toggle='tooltip']").tooltip();   
-    //(".hoverText =['title']").tooltip();
+    $('document').tooltip();
   });
   // Lade till en tooltip för att uppmärksamma besökaren om att klicka för att byta färg.
   $("#removeBtn").click(function () {
