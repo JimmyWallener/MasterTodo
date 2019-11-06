@@ -10,11 +10,19 @@ body {
    /******Change the font color to white ********/
     color:#ffff;
 }
-
+.tooltip {
+    display:none;
+    background:black;
+    font-size:12px;
+    height:70px;
+    width:160px;
+    padding:25px;
+    color:#eee;
+}
 .container {
     background-color: #d5fefd;
     /*background-image: linear-gradient(315deg, #d5fefd 0%, #fffcff 74%);*/
-    height: 500px;
+    height: 650px; /* Ökade här för att alla 10 punkter är inom containern */
     width: auto;
     margin: 50px 20%;
     border-radius: 10px;
@@ -32,13 +40,18 @@ ul {
     margin-top:5px;
 }
 ul > li{
-    padding:0;
+    padding: 0px;
     list-style-type: none;
     font-size: 1em;
     font-family: 'Lato', sans-serif;
     margin-top:5px;
     width:600px;
     border-bottom: 1px solid #797676;
+}
+ /* Förändrade storleken på checkboxen och skapade en marginal mot texten så de inte sitter ihop */
+input[type=checkbox] {
+    transform: scale(1.5);
+    margin: 10px;
 }
 
 /*har addat css style*/
