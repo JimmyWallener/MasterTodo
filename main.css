@@ -10,7 +10,7 @@ body {
    /******Change the font color to white ********/
     color:#ffff;
 }
-.tooltip {
+#tooltip {
     display:none;
     background:black;
     font-size:12px;
