@@ -49,7 +49,8 @@ $(function () {
 
   //
   $(function () {
-    (".hoverText[title]").tooltip();
+    $(".hoverText:[data-toggle='tooltip']").tooltip();   
+    //(".hoverText =['title']").tooltip();
   });
   // Lade till en tooltip för att uppmärksamma besökaren om att klicka för att byta färg.
   $("#removeBtn").click(function () {
