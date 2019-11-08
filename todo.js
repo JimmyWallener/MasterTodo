@@ -10,16 +10,13 @@ $(function () {
     myTaskArray.push(newItem);
     if (myTaskArray.length > 10) {
       alert("Your Schedule for today is now full!");
-      //Lade in ett stopp här då trots att man säger att maxlängd är uppnådd, så fortsatte koden posta efter man trycker ok. return; stoppar det.
       return;
     } if (newItem == '' || newItem.length < 4) {
       return;
     } else {
       var index = myTaskArray.length;
       $("#list").append("<li id='" + index + "'><input type = 'checkbox' id = 'removeTask'>" + "  " + newItem + "</li>");
-      // lade till nummer framför texten.
-      //när man klickar på checkbox i listan ska det alternativet strykas över. Jag har addat här också :) 
-      //jag testar gitbash here och det funkar.. hehehe im so happy -- Älskar det 
+      // Adds function for setting completed attributes such as green background and line-through.
       $("input:checkbox").click(function () {
         var $this = $(this);
         if (this.checked) {
@@ -33,7 +30,9 @@ $(function () {
   });
 
 
-  // Här behöver vi lägga in draggable mot div som mall. Det skall inte gå att dra och släppa utanför divtaggen.
+  // Added function to be able to sort element and shift them around. 
+  // connectWith acts as an refresher and checks for newly added elements. Needed since <li> elements are added dynamically.
+  // tolerance keeps the sortable within the <ul></ul>.
 
   $('.sortList').sortable({
     connectWith: ".sortList",
@@ -41,21 +40,23 @@ $(function () {
   });
 
 
-
-  //
+  // Added tooltip for h1. Document checks for title and displays it as a tooltip.
   $(function () {
     $('document').tooltip();
   });
-  // Lade till en tooltip för att uppmärksamma besökaren om att klicka för att byta färg.
+
+  // Once checkbox is clicked, element can be removed by clicking trashcan.
+  // Problem left to be solved : 
+  // .remove() function only deletes element but does not remove item from array. Need to work out a solution for that.
+
   $("#removeBtn").click(function () {
     $('#list').children().filter(function () {
       return this.firstChild.checked;
     }).remove()
   });
-  // Gjorde containern klickbar istället för random bakgrundsfärg. Fick deaktivera css för image gradient då den lägger sig över backgroundsfärgen.
-  // Ändrade igen, då färgen ändrades när man använder textfältet. Nu är det h1 texten som är klickbar, dock är klickable area stort nog.
-  //ohhh nice :)
 
+  // Color randomiser that takes any value between 0-255 and inserts it into css background color. 
+  // Set clickfunction to <h1> and will display in container area.
   $("h1").click(function () {
     $(".container").each(function () {
       let colorRed = Math.floor((Math.random() * 256));
