@@ -15,7 +15,8 @@ $(function () {
     } if (newItem == '' || newItem.length < 4) {
       return;
     } else {
-      $("#list").append("<li><input type = 'checkbox' id = 'removeTask'>" + "  " + newItem + "</li>");
+      var index = myTaskArray.length;
+      $("#list").append("<li id='" + index + "'><input type = 'checkbox' id = 'removeTask'>" + "  " + newItem + "</li>");
       // lade till nummer framför texten.
       //när man klickar på checkbox i listan ska det alternativet strykas över. Jag har addat här också :) 
       //jag testar gitbash here och det funkar.. hehehe im so happy -- Älskar det 
@@ -49,7 +50,7 @@ $(function () {
   $("#removeBtn").click(function () {
     $('#list').children().filter(function () {
       return this.firstChild.checked;
-    }).remove();
+    }).remove()
   });
   // Gjorde containern klickbar istället för random bakgrundsfärg. Fick deaktivera css för image gradient då den lägger sig över backgroundsfärgen.
   // Ändrade igen, då färgen ändrades när man använder textfältet. Nu är det h1 texten som är klickbar, dock är klickable area stort nog.

@@ -11,16 +11,6 @@ body {
     color:#ffff;
 }
 
-.container {
-    background-color: #d5fefd;
-    /*background-image: linear-gradient(315deg, #d5fefd 0%, #fffcff 74%);*/
-    height: 650px; /* Ökade här för att alla 10 punkter är inom containern */
-    width: auto;
-    margin: 50px 20%;
-    border-radius: 10px;
-    padding:50px;
-}
-
 h1 {
     padding: 20px 0;
     text-align: center;
@@ -30,26 +20,49 @@ h1 {
 }
 ul {
     margin-top:5px;
+    width: 100%;
 }
 ul > li{
-    padding: 0px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px black;
+    padding: 2px;
     list-style-type: none;
-    font-size: 1em;
+    font-size: 1.2em;
     font-family: 'Lato', sans-serif;
     margin-top:5px;
-    width:600px;
+    width: inherit;
     border-bottom: 1px solid #797676;
+    cursor: pointer;
+    word-break: break-all;
+
 }
  /* Förändrade storleken på checkboxen och skapade en marginal mot texten så de inte sitter ihop */
 input[type=checkbox] {
     transform: scale(1.5);
     margin: 10px;
 }
+input[type=checkbox]:hover {
+    transform: scale(2);
+}
+
+
+.container {
+    background-color: #024746;
+    /*background-image: linear-gradient(315deg, #d5fefd 0%, #fffcff 74%);*/
+    height: 650px; /* Ökade här för att alla 10 punkter är inom containern */
+    width: auto;
+    margin: 50px 20%;
+    border-radius: 10px;
+    padding:50px;
+}
+
+
 
 /*har addat css style*/
 .completed {
     text-decoration: line-through;  
     color:#000;
+    background-color: rgb(29, 134, 7);
 }
 
 
@@ -60,7 +73,7 @@ input[type=checkbox] {
     }
     
     ul>li {
-         width:200px;
+         width: auto;
     }
     
     h1{
