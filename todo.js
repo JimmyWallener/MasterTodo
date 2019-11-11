@@ -65,6 +65,12 @@ $(function () {
     });
   });
 
+//stylar input field
+var inputFields = $("input:text");
+ inputFields.focus(function () {
+     $(this).css("box-shadow", "0 0 5px #181");
+ });
+
 });
 
 
