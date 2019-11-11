@@ -6,6 +6,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+    overflow: hidden;
    /******Change the font color to white ********/
     color:#ffff;
 }
@@ -16,7 +17,7 @@ h1 {
     font-size: 2em;
     font-weight: 800;
     font-family: 'Great Vibes', cursive;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 ul {
     margin-top:10px;
@@ -60,11 +61,11 @@ button:hover, input[type=button]:hover {
 .container {
     background-color: #024746;
     /*background-image: linear-gradient(315deg, #d5fefd 0%, #fffcff 74%);*/
-    height: 650px; /* Ökade här för att alla 10 punkter är inom containern */
+    height: 580px; /* Ökade här för att alla 10 punkter är inom containern */
     width: auto;
-    margin: 20px 20% 50px;
+    margin: 20px 20%;
     border-radius: 10px;
-    padding:50px;
+    padding:0 50px;
     box-shadow: 0 3px 5px 0 black;
 }
 
