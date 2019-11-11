@@ -6,7 +6,6 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
-    overflow: hidden;
    /******Change the font color to white ********/
     color:#ffff;
 }
@@ -63,7 +62,7 @@ button:hover, input[type=button]:hover {
     /*background-image: linear-gradient(315deg, #d5fefd 0%, #fffcff 74%);*/
     height: 650px; /* Ökade här för att alla 10 punkter är inom containern */
     width: auto;
-    margin: 50px 20%;
+    margin: 20px 20% 50px;
     border-radius: 10px;
     padding:50px;
     box-shadow: 0 3px 5px 0 black;
